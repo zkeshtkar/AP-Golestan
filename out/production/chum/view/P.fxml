@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Image1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfosserController">
+    <children>
+        <ImageView fx:id="ONE4" fitHeight="900.0" fitWidth="881.0" layoutX="-3.0" pickOnBounds="true">
+            <image>
+                <Image url="@../resources/9.png" />
+            </image>
+        </ImageView>
+        <HBox layoutX="336.0" layoutY="858.0" prefHeight="7.0" prefWidth="203.0" scaleX="0.8" scaleY="0.8" scaleZ="0.8">
+            <children>
+                <Button fx:id="ONE" mnemonicParsing="false" onAction="#ONE" prefHeight="31.0" prefWidth="37.0" text="1" />
+                <Button fx:id="TWO" mnemonicParsing="false" onAction="#TWO" prefHeight="31.0" prefWidth="37.0" text="2" />
+                <Button fx:id="THREE" mnemonicParsing="false" onAction="#THREE" prefHeight="31.0" prefWidth="37.0" text="3" />
+                <Button fx:id="FOUR" mnemonicParsing="false" onAction="#FOUR" prefHeight="31.0" prefWidth="37.0" text="4" />
+                <Button fx:id="FIVE" mnemonicParsing="false" onAction="#FIVE" prefHeight="31.0" prefWidth="37.0" text="5" />
+                <Button fx:id="SIX" mnemonicParsing="false" onAction="#SIX" prefHeight="31.0" prefWidth="37.0" text="6" />
+            </children>
+        </HBox>
+        <Label alignment="CENTER" layoutX="413.0" layoutY="13.0" prefHeight="21.0" prefWidth="73.0" text="به نام خدا">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="800.0" layoutY="14.0" prefHeight="19.0" prefWidth="56.0" text="نام استاد">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="798.0" layoutY="13.0" text=":" />
+        <Label alignment="CENTER_RIGHT" layoutX="628.0" layoutY="13.0" prefHeight="21.0" prefWidth="162.0">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="ONE1" alignment="CENTER_RIGHT" layoutX="57.0" layoutY="72.0" prefHeight="37.0" prefWidth="772.0" text="استاد گرامی جهت تغییرنام کاربری و رمز عبور به صفحه ی دوم وایجاد کلاس جدید به صفحه ی سوم و مشاهده ی لیست  " visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="ONE2" alignment="CENTER_RIGHT" layoutX="75.0" layoutY="114.0" prefHeight="37.0" prefWidth="750.0" text="دانشجویان به صفحه ی چهارم و بستن کلاس به صفحه ی پنجم و مشاهده ی واحدهای اراعه شده به صفحه ی ششم " visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="ONE3" alignment="CENTER_RIGHT" layoutX="113.0" layoutY="159.0" prefHeight="37.0" prefWidth="715.0" text="و مشاهده ی لیست دانشجویان در هر واحد به صفحه ی هفتم مراجعه فرمایید " visible="false">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="two1" alignment="CENTER_RIGHT" layoutX="-12.0" layoutY="48.0" prefHeight="72.0" prefWidth="820.0" text="استاد  گرامی سعی کنید رمز عبور و نام کاربری را به گونه ای انتخاب کنید که فراموش نشود   " textFill="#e41e1e" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="two2" alignment="CENTER_RIGHT" layoutX="257.0" layoutY="120.0" prefHeight="49.0" prefWidth="540.0" text="و توسط افراد دیگر قابل شناسایی نباشد" textFill="#e41e1e" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="two3" alignment="CENTER_RIGHT" layoutX="681.0" layoutY="244.0" prefHeight="21.0" prefWidth="121.0" text="رمز عبور فعلی " visible="false" />
+        <TextField fx:id="oldPassword" layoutX="477.0" layoutY="239.0" scaleY="0.8" visible="false" />
+        <Label fx:id="two16" alignment="CENTER_RIGHT" layoutX="692.0" layoutY="316.0" prefHeight="21.0" prefWidth="115.0" text="نام کاربری فعلی " visible="false" />
+        <TextField fx:id="oldUsername" layoutX="477.0" layoutY="311.0" scaleY="0.8" visible="false" />
+        <Label fx:id="two4" alignment="CENTER_RIGHT" layoutX="714.0" layoutY="389.0" prefHeight="21.0" prefWidth="90.0" text="رمز عبور جدید " visible="false" />
+        <TextField fx:id="newPassword" layoutX="477.0" layoutY="384.0" scaleY="0.8" visible="false" />
+        <Label fx:id="two5" alignment="CENTER_RIGHT" layoutX="708.0" layoutY="464.0" prefHeight="21.0" prefWidth="102.0" text="نام کاربری  جدید" visible="false" />
+        <TextField fx:id="newUsername" layoutX="477.0" layoutY="459.0" scaleY="0.8" visible="false" />
+        <Label fx:id="two6" alignment="CENTER_RIGHT" layoutX="296.0" layoutY="244.0" prefHeight="21.0" prefWidth="146.0" text="old password" textFill="#2f19d7" visible="false" />
+        <Label fx:id="two7" alignment="CENTER_RIGHT" layoutX="333.0" layoutY="316.0" prefHeight="21.0" prefWidth="115.0" text="old username" textFill="#2f19d7" visible="false" />
+        <Label fx:id="two8" layoutX="344.0" layoutY="389.0" prefHeight="21.0" prefWidth="108.0" text="new password" textFill="#2f19d7" visible="false" />
+        <Label fx:id="two9" alignment="CENTER_RIGHT" layoutX="347.0" layoutY="464.0" prefHeight="21.0" prefWidth="102.0" text="new username" textFill="#2f19d7" visible="false" />
+        <Label fx:id="two10" alignment="CENTER_RIGHT" layoutX="178.0" layoutY="389.0" prefHeight="21.0" prefWidth="108.0" text="حداقل 6 کاراکتر " textFill="#5525d0" visible="false" />
+        <Label fx:id="two11" alignment="CENTER_RIGHT" layoutX="178.0" layoutY="631.0" prefHeight="21.0" prefWidth="108.0" text="حداقل 6 کاراکتر " textFill="#5525d0" visible="false" />
+        <Label fx:id="two12" alignment="CENTER_RIGHT" layoutX="685.0" layoutY="545.0" prefHeight="21.0" prefWidth="130.0" text="تایید رمز عبور جدید " visible="false" />
+        <TextField fx:id="confirmNewPassword" layoutX="477.0" layoutY="540.0" scaleY="0.8" visible="false" />
+        <Label fx:id="two13" alignment="CENTER_RIGHT" layoutX="302.0" layoutY="545.0" prefHeight="21.0" prefWidth="157.0" text="confirm new password" textFill="#2f19d7" visible="false" />
+        <Label fx:id="two14" alignment="CENTER_RIGHT" layoutX="669.0" layoutY="631.0" prefHeight="21.0" prefWidth="146.0" text="تایید نام کاربری جدید" visible="false" />
+        <TextField fx:id="confirmNewUsername" layoutX="477.0" layoutY="626.0" scaleY="0.8" visible="false" />
+        <Label fx:id="two15" alignment="CENTER_RIGHT" layoutX="302.0" layoutY="631.0" prefHeight="21.0" prefWidth="157.0" text="confirm new username" textFill="#2f19d7" visible="false" />
+        <Button fx:id="Chenging" layoutX="110.0" layoutY="761.0" mnemonicParsing="false" onAction="#Chenging" prefHeight="31.0" prefWidth="203.0" text="اعمال تغییرات " visible="false" />
+        <ImageView fx:id="i1" fitHeight="13.0" fitWidth="23.0" layoutX="638.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../resources/iconWarning.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="i4" fitHeight="13.0" fitWidth="23.0" layoutX="638.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../resources/iconWarning.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="i3" fitHeight="13.0" fitWidth="23.0" layoutX="638.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../resources/iconWarning.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="i2" fitHeight="13.0" fitWidth="23.0" layoutX="638.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../resources/iconWarning.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="i6" fitHeight="13.0" fitWidth="23.0" layoutX="638.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../resources/iconWarning.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="i5" fitHeight="13.0" fitWidth="23.0" layoutX="638.0" layoutY="577.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../resources/iconWarning.gif" />
+            </image>
+        </ImageView>
+        <Label fx:id="OldPasswordLable" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="270.0" prefHeight="21.0" prefWidth="186.0" textFill="#dd1c1c">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="oldUsernameLable" alignment="CENTER_RIGHT" layoutX="435.0" layoutY="342.0" prefHeight="21.0" prefWidth="194.0" textFill="#bc1717">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="newPsswordLable" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="415.0" prefHeight="21.0" prefWidth="186.0" textFill="#b21717">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="newUsrnameLable" alignment="CENTER_RIGHT" layoutX="426.0" layoutY="491.0" prefHeight="21.0" prefWidth="203.0" textFill="#c61616">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="confirmpass" alignment="CENTER_RIGHT" layoutX="435.0" layoutY="573.0" prefHeight="21.0" prefWidth="194.0" textFill="#cd1a1a">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="confirmUser" layoutX="426.0" layoutY="663.0" prefHeight="21.0" prefWidth="203.0" textFill="#c32020">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="THREE1" alignment="CENTER_RIGHT" layoutX="783.0" layoutY="80.0" prefHeight="21.0" prefWidth="84.0" text="نام کلاس " visible="false" />
+        <TextField fx:id="ClassName" layoutX="599.0" layoutY="75.0" scaleY="0.8" visible="false" />
+        <Label fx:id="THREE3" alignment="CENTER_RIGHT" layoutX="455.0" layoutY="80.0" prefHeight="21.0" prefWidth="73.0" text="تعداد واحد" visible="false" />
+        <TextField fx:id="Vahed" layoutX="392.0" layoutY="75.0" prefHeight="31.0" prefWidth="56.0" scaleY="0.8" visible="false" />
+        <Label fx:id="THREE7" alignment="CENTER_RIGHT" layoutX="783.0" layoutY="117.0" prefHeight="31.0" prefWidth="84.0" text="روز تشکیل " visible="false" />
+        <Label fx:id="THREE8" layoutX="790.0" layoutY="122.0" prefHeight="21.0" prefWidth="3.0" text=":" visible="false" />
+        <Label fx:id="THREE4" layoutX="453.0" layoutY="80.0" prefHeight="21.0" prefWidth="3.0" text=":" visible="false" />
+        <Label fx:id="THREE2" layoutX="789.0" layoutY="80.0" text=":" visible="false" />
+        <RadioButton fx:id="Saturday" alignment="CENTER_RIGHT" layoutX="669.0" layoutY="122.0" mnemonicParsing="false" onAction="#Saturday" prefHeight="21.0" prefWidth="121.0" text="شنبه " visible="false" />
+        <RadioButton fx:id="Sunday" alignment="CENTER_RIGHT" layoutX="669.0" layoutY="159.0" mnemonicParsing="false" onAction="#Sunday" prefHeight="21.0" prefWidth="121.0" text="یکشنبه" visible="false" />
+        <RadioButton fx:id="Monday" alignment="CENTER_RIGHT" layoutX="410.0" layoutY="122.0" mnemonicParsing="false" onAction="#Monday" prefHeight="21.0" prefWidth="121.0" text="دوشنبه" visible="false" />
+        <RadioButton fx:id="Tuesday" alignment="CENTER_RIGHT" layoutX="410.0" layoutY="159.0" mnemonicParsing="false" onAction="#Tuesday" prefHeight="21.0" prefWidth="121.0" text="سه شنبه " visible="false" />
+        <RadioButton fx:id="Thursday" alignment="CENTER_RIGHT" layoutX="146.0" layoutY="122.0" mnemonicParsing="false" onAction="#Thursday" prefHeight="21.0" prefWidth="115.0" text="چهارشنبه " visible="false" />
+        <Label fx:id="THREE9" alignment="CENTER_RIGHT" layoutX="793.0" layoutY="214.0" prefHeight="21.0" prefWidth="73.0" text="زمان تشکیل" visible="false" />
+        <Label fx:id="THREE10" layoutX="788.0" layoutY="214.0" text=":" visible="false" />
+        <Label fx:id="THREE11" alignment="CENTER_RIGHT" layoutX="769.0" layoutY="214.0" prefHeight="21.0" prefWidth="14.0" text="8" visible="false" />
+        <Label fx:id="THREE12" layoutX="756.0" layoutY="214.0" text="تا" visible="false" />
+        <Label fx:id="THREE13" layoutX="730.0" layoutY="214.0" prefHeight="21.0" prefWidth="23.0" text="10" visible="false" />
+        <RadioButton fx:id="sanse1" layoutX="672.0" layoutY="214.0" mnemonicParsing="false" onAction="#sanse1" visible="false" />
+        <Label fx:id="THREE14" layoutX="510.0" layoutY="214.0" text="10" visible="false" />
+        <Label fx:id="THREE15" layoutX="492.0" layoutY="214.0" text="تا" visible="false" />
+        <Label fx:id="THREE16" layoutX="469.0" layoutY="214.0" text="12" visible="false" />
+        <RadioButton fx:id="sanse2" layoutX="407.0" layoutY="214.0" mnemonicParsing="false" onAction="#Sanse2" visible="false" />
+        <Label fx:id="THREE17" layoutX="241.0" layoutY="214.0" text="14" visible="false" />
+        <Label fx:id="THREE18" layoutX="228.0" layoutY="214.0" text="تا" visible="false" />
+        <Label fx:id="THREE19" layoutX="203.0" layoutY="214.0" text="16" visible="false" />
+        <RadioButton fx:id="sanse3" layoutX="146.0" layoutY="214.0" mnemonicParsing="false" onAction="#Sanse3" visible="false" />
+        <Label fx:id="THREE5" alignment="CENTER_RIGHT" layoutX="195.0" layoutY="80.0" prefHeight="21.0" prefWidth="84.0" text="تعداد ظرفیت" visible="false" />
+        <Label fx:id="THREE6" layoutX="193.0" layoutY="80.0" prefHeight="21.0" prefWidth="3.0" text=":" visible="false" />
+        <TextField fx:id="Zarfiyat" layoutX="132.0" layoutY="75.0" prefHeight="31.0" prefWidth="56.0" scaleY="0.8" visible="false" />
+        <Button fx:id="chenging" layoutX="16.0" layoutY="493.0" mnemonicParsing="false" onAction="#chenging" prefHeight="31.0" prefWidth="194.0" text="اعمال تغییرات" visible="false" />
+        <Label fx:id="THREE20" alignment="CENTER_RIGHT" layoutX="732.0" layoutY="270.0" prefHeight="21.0" prefWidth="137.0" text="تعداد دروس پیش نیاز" visible="false" />
+        <Label fx:id="THREE24" layoutX="627.0" layoutY="270.0" text=":" visible="false" />
+        <Label fx:id="THREE21" layoutX="728.0" layoutY="270.0" prefHeight="21.0" prefWidth="9.0" text=")" visible="false" />
+        <Label fx:id="THREE22" alignment="CENTER_RIGHT" layoutX="671.0" layoutY="270.0" prefHeight="21.0" prefWidth="56.0" text="حداکثر3 " visible="false" />
+        <Label fx:id="THREE23" alignment="CENTER_RIGHT" layoutX="633.0" layoutY="270.0" prefHeight="21.0" prefWidth="39.0" text="مورد)" visible="false" />
+        <TextField fx:id="THREE25" layoutX="571.0" layoutY="265.0" prefHeight="31.0" prefWidth="49.0" scaleY="0.8" visible="false" />
+        <Label fx:id="THREE26" layoutX="352.0" layoutY="270.0" text="نام درس اول" visible="false" />
+        <TextField fx:id="Lesson1" layoutX="139.0" layoutY="265.0" scaleY="0.8" visible="false" />
+        <Label fx:id="THREE27" alignment="CENTER_RIGHT" layoutX="346.0" layoutY="316.0" prefHeight="21.0" prefWidth="90.0" text="نام درس دوم" visible="false" />
+        <TextField fx:id="Lesson2" alignment="CENTER_RIGHT" layoutX="135.0" layoutY="311.0" scaleY="0.8" visible="false" />
+        <Label fx:id="THREE28" alignment="CENTER_RIGHT" layoutX="347.0" layoutY="367.0" prefHeight="21.0" prefWidth="90.0" text="نام درس سوم" visible="false" />
+        <TextField fx:id="Lesson3" alignment="CENTER_RIGHT" layoutX="135.0" layoutY="362.0" scaleY="0.8" visible="false" />
+        <Button fx:id="HowMuchPish" layoutX="499.0" layoutY="265.0" mnemonicParsing="false" onAction="#HowMuchPish" prefHeight="31.0" prefWidth="56.0" scaleY="0.8" text="تایید" visible="false" />
+        <Button layoutX="14.0" layoutY="33.0" mnemonicParsing="false" onAction="#Exit" text="خروج" />
+      <Label fx:id="FOUR1" alignment="CENTER" layoutX="547.0" layoutY="162.0" prefHeight="37.0" prefWidth="146.0" text="نام دانشجو" visible="false" />
+      <Label fx:id="FOUR2" alignment="CENTER" layoutX="340.0" layoutY="159.0" prefHeight="37.0" prefWidth="162.0" text="نام درس" visible="false" />
+      <Label fx:id="FOUR3" alignment="CENTER" layoutX="201.0" layoutY="165.0" prefHeight="31.0" prefWidth="121.0" text="نمره" visible="false" />
+      <Label fx:id="NameStudent" alignment="CENTER" layoutX="539.0" layoutY="236.0" prefHeight="37.0" prefWidth="162.0" text="Label" visible="false" />
+      <Label fx:id="NameLesson" alignment="CENTER" layoutX="351.0" layoutY="236.0" prefHeight="37.0" prefWidth="157.0" text="Label" visible="false" />
+      <TextField fx:id="Grade" layoutX="233.0" layoutY="239.0" prefHeight="31.0" prefWidth="56.0" scaleY="0.8" visible="false" />
+      <Button fx:id="Next" layoutX="710.0" layoutY="239.0" mnemonicParsing="false" onAction="#Next" prefHeight="31.0" prefWidth="65.0" scaleY="0.8" text="بعدی" visible="false" />
+      <Button fx:id="Previous" layoutX="107.0" layoutY="239.0" mnemonicParsing="false" onAction="#Previous" scaleY="0.8" text="قبلی" visible="false" />
+      <Button fx:id="Confirmation4" layoutX="229.0" layoutY="276.0" mnemonicParsing="false" onAction="#Confirmation4" prefHeight="31.0" prefWidth="65.0" scaleY="0.8" text="تایید" visible="false" />
+      <Button fx:id="FIVE1" layoutX="90.0" layoutY="509.0" mnemonicParsing="false" onAction="#FIVE1" prefHeight="31.0" prefWidth="173.0" scaleY="0.8" text="بستن کلاس" visible="false" />
+      <ImageView fx:id="SIXIMG" fitHeight="140.0" fitWidth="146.0" layoutX="714.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/24.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="515.0" layoutY="104.0" prefHeight="26.0" prefWidth="146.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="SIXNAME" alignment="CENTER_RIGHT" layoutX="594.0" layoutY="107.0" prefHeight="26.0" prefWidth="90.0" text="نام کاربری" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="SIX1" layoutX="605.0" layoutY="110.0" text=":" visible="false" />
+      <Label fx:id="SIXPASS" alignment="CENTER_RIGHT" layoutX="616.0" layoutY="201.0" prefHeight="26.0" prefWidth="73.0" text="رمز عبور" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="SIX2" layoutX="614.0" layoutY="204.0" text=":" visible="false" />
+      <Label fx:id="SIXNAME2" alignment="CENTER_RIGHT" layoutX="454.0" layoutY="108.0" prefHeight="26.0" prefWidth="146.0" text="Label" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="SIXPASS2" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="202.0" prefHeight="26.0" prefWidth="162.0" text="Label" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="Vaheds" layoutX="167.0" layoutY="107.0" mnemonicParsing="false" onAction="#Vaheds" prefHeight="31.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="مشاهده ی واحد های اراعه شده" visible="false" />
+      <Button fx:id="Lists" layoutX="167.0" layoutY="199.0" mnemonicParsing="false" onAction="#Lists" prefHeight="31.0" prefWidth="271.0" style="-fx-background-color: #ffffff;" text="مشاهده ی لیست دانشجویان در هر واحد" visible="false" />
+      <Label fx:id="NameOfclass" alignment="CENTER" layoutX="458.0" layoutY="132.0" prefHeight="61.0" prefWidth="194.0" text="نام کلاس" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="NumOfVahed" alignment="CENTER" layoutX="228.0" layoutY="132.0" prefHeight="61.0" prefWidth="194.0" text="تعداد واحد" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="nc" alignment="CENTER" layoutX="469.0" layoutY="230.0" prefHeight="49.0" prefWidth="173.0" text="Label" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="nv" alignment="CENTER" layoutX="239.0" layoutY="230.0" prefHeight="49.0" prefWidth="173.0" text="Label" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="pre7" layoutX="657.0" layoutY="239.0" mnemonicParsing="false" onAction="#pre7" prefHeight="31.0" prefWidth="65.0" scaleY="0.9" text="قبلی" visible="false" />
+      <Button fx:id="next7" layoutX="127.0" layoutY="239.0" mnemonicParsing="false" onAction="#next7" scaleY="0.9" text="بعدی" visible="false" />
+      <Label fx:id="StudentVahed" alignment="CENTER_RIGHT" layoutX="679.0" layoutY="86.0" prefHeight="37.0" prefWidth="180.0" text="مشاهده ی دانشجویان واحد " />
+      <Label fx:id="VahedSix1" layoutX="677.0" layoutY="94.0" text=":" />
+      <Label fx:id="StudentVahedLabel" alignment="CENTER_RIGHT" layoutX="343.0" layoutY="94.0" prefHeight="21.0" prefWidth="280.0" />
+      <Line fx:id="VahedSix11" endX="100.0" layoutX="550.0" layoutY="178.0" startX="-350.0" />
+      <Line fx:id="VahedSix12" endX="100.0" layoutX="550.0" layoutY="225.0" startX="-350.0" />
+      <Line fx:id="VahedSix13" endX="100.0" layoutX="550.0" layoutY="451.0" startX="-350.0" />
+      <Line fx:id="VahedSix14" endY="145.0" layoutX="200.0" layoutY="304.0" startY="-130.0" />
+      <Line fx:id="VahedSix15" endY="145.0" layoutX="650.0" layoutY="304.0" startY="-130.0" />
+      <Label fx:id="VahedSix2" alignment="CENTER" layoutX="201.0" layoutY="181.0" prefHeight="37.0" prefWidth="440.0" text="نام دانشجویان" />
+      <Line fx:id="VahedSix16" endY="130.0" layoutX="430.0" layoutY="324.0" startY="-100.0" />
+      <Label fx:id="VahedSix3" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="253.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix4" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="300.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix5" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="353.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix6" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="401.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix7" alignment="CENTER_RIGHT" layoutX="247.0" layoutY="256.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix8" alignment="CENTER_RIGHT" layoutX="247.0" layoutY="302.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix9" alignment="CENTER_RIGHT" layoutX="247.0" layoutY="353.0" prefHeight="28.0" prefWidth="173.0" />
+      <Label fx:id="VahedSix10" alignment="CENTER_RIGHT" layoutX="254.0" layoutY="401.0" prefHeight="28.0" prefWidth="173.0" />
+      <Button fx:id="NEXT6" layoutX="703.0" layoutY="136.0" mnemonicParsing="false" onAction="#NEXT6" text="بعدی" />
+      <Button fx:id="PRE6" layoutX="790.0" layoutY="136.0" mnemonicParsing="false" onAction="#PRE6" text="قبلی" />
+      <Button fx:id="PreStudent6" layoutX="450.0" layoutY="486.0" mnemonicParsing="false" onAction="#PreStudent6" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #32CD32;" text="قبلی" />
+      <Button fx:id="NextStudent6" layoutX="197.0" layoutY="486.0" mnemonicParsing="false" onAction="#NextStudent6" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #32CD32;" text="بعدی" />
+        
+    </children>
+</Pane>

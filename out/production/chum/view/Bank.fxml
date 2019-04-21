@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BankController">
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="138.0" layoutX="717.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/shaparak.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="703.0" layoutY="121.0" prefHeight="21.0" prefWidth="105.0" text="شماره کارت " textFill="#3207f2" />
+      <TextField fx:id="Bank5" disable="true" layoutX="614.0" layoutY="163.0" onKeyReleased="#Bank5" prefHeight="31.0" prefWidth="76.0" />
+      <TextField fx:id="Bank11" layoutX="296.0" layoutY="163.0" onKeyReleased="#Bank11" prefHeight="31.0" prefWidth="76.0" />
+      <TextField fx:id="Bank9" disable="true" layoutX="400.0" layoutY="163.0" onKeyReleased="#Bank9" prefHeight="31.0" prefWidth="76.0" />
+      <TextField fx:id="Bank7" disable="true" layoutX="507.0" layoutY="163.0" onKeyReleased="#Bank7" prefHeight="31.0" prefWidth="76.0" />
+      <TextField fx:id="Bank3" disable="true" layoutX="725.0" layoutY="163.0" onKeyReleased="#Bank3" prefHeight="31.0" prefWidth="76.0" />
+      <Label layoutX="379.0" layoutY="168.0" prefHeight="21.0" prefWidth="27.0" text="_" />
+      <Label layoutX="487.0" layoutY="168.0" prefHeight="21.0" prefWidth="27.0" text="_" />
+      <Label layoutX="593.0" layoutY="168.0" prefHeight="21.0" prefWidth="27.0" text="_" />
+      <Label layoutX="704.0" layoutY="168.0" prefHeight="21.0" prefWidth="27.0" text="_" />
+      <Label alignment="CENTER_RIGHT" layoutX="534.0" layoutY="207.0" prefHeight="21.0" prefWidth="267.0" text="در صورت فعال شدن فیلد پنجم لطفا ان را پر کنید" textFill="#1c15e8">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="709.0" layoutY="271.0" prefHeight="21.0" prefWidth="89.0" text="رمز دوم کارت " textFill="#3011ab" />
+      <Label alignment="CENTER_RIGHT" layoutX="620.0" layoutY="271.0" prefHeight="21.0" prefWidth="89.0" text="(رمز اینترنتی)" textFill="#2816b2" />
+      <Label alignment="CENTER_RIGHT" layoutX="593.0" layoutY="311.0" prefHeight="21.0" prefWidth="202.0" text="لطفا از صحت رمز عبور خود مطمعن شوید" textFill="#1916c9">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Bank1" disable="true" layoutX="414.0" layoutY="266.0" onKeyReleased="#Bank1" scaleY="0.8" />
+      <Label alignment="CENTER_RIGHT" layoutX="644.0" layoutY="368.0" prefHeight="25.0" prefWidth="154.0" text="کد سه یا چهاررقمی " textFill="#2816b2" />
+      <Label alignment="CENTER_RIGHT" layoutX="627.0" layoutY="370.0" prefHeight="21.0" prefWidth="48.0" text="(cvv2)" textFill="#2816b2" />
+      <TextField fx:id="Bank2" disable="true" layoutX="421.0" layoutY="365.0" onKeyReleased="#Bank2" scaleY="0.8" />
+      <Label alignment="CENTER_RIGHT" layoutX="655.0" layoutY="425.0" prefHeight="31.0" prefWidth="140.0" text="تاریخ انقضای کارت " textFill="#2816b2" />
+      <Label layoutX="576.0" layoutY="430.0" prefHeight="21.0" prefWidth="27.0" text="ماه " textFill="#2816b2" />
+      <Label layoutX="470.0" layoutY="430.0" text="سال" textFill="#2816b2" />
+      <TextField fx:id="Bank12" disable="true" layoutX="521.0" layoutY="425.0" onKeyPressed="#Bank12" prefHeight="31.0" prefWidth="48.0" scaleY="0.8" />
+      <TextField fx:id="Bank13" disable="true" layoutX="411.0" layoutY="425.0" onKeyPressed="#Bank13" prefHeight="31.0" prefWidth="54.0" scaleY="0.8" />
+      <Label alignment="CENTER_RIGHT" layoutX="602.0" layoutY="490.0" prefHeight="31.0" prefWidth="202.0" text="عبارت زیر را در کادر وارد نمایید  " textFill="#2816b2" />
+      <Label fx:id="Bank14" layoutX="471.0" layoutY="495.0" prefHeight="21.0" prefWidth="116.0" style="-fx-background-color: #D3D3D3;" />
+      <TextField fx:id="Bank15" layoutX="468.0" layoutY="532.0" onAction="#Bank15" prefHeight="31.0" prefWidth="123.0" scaleY="0.8" />
+      <Label alignment="CENTER_RIGHT" layoutX="744.0" layoutY="601.0" prefHeight="21.0" prefWidth="48.0" text="ایمیل " textFill="#2816b2" />
+      <Label alignment="CENTER_RIGHT" layoutX="612.0" layoutY="601.0" prefHeight="21.0" prefWidth="140.0" text="(اختیاری)" textFill="#2816b2" />
+      <TextField layoutX="507.0" layoutY="596.0" scaleY="0.8" />
+      <Button layoutX="573.0" layoutY="677.0" mnemonicParsing="false" onAction="#Pardakht" prefHeight="31.0" prefWidth="212.0" style="-fx-background-color: #228B22;" text="پرداخت" />
+      <Button layoutX="338.0" layoutY="677.0" mnemonicParsing="false" onAction="#FOUR" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: B22222;" text="انصراف" />
+      <ImageView fitHeight="95.0" fitWidth="145.0" layoutX="127.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/tejarat.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="259.0" layoutY="360.0" prefHeight="21.0" prefWidth="48.0" text="پذیرنده ">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="360.0" prefHeight="21.0" prefWidth="9.0" text=":" />
+      <Label alignment="CENTER_RIGHT" layoutX="148.0" layoutY="360.0" prefHeight="21.0" prefWidth="105.0" text="دانشگاه شهید بهشتی">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="360.0" prefHeight="21.0" prefWidth="9.0" text="-" />
+      <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="360.0" prefHeight="21.0" prefWidth="89.0" text="اتوماسیون تغذیه">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="393.0" prefHeight="17.0" prefWidth="82.0" text="شماره ی پایانه ">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="430.0" prefHeight="21.0" prefWidth="9.0" text=":" />
+      <Label layoutX="164.0" layoutY="393.0" text="02000647">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="215.0" layoutY="430.0" prefHeight="21.0" prefWidth="89.0" text="مبلغ قابل پرداخت">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="391.0" prefHeight="21.0" prefWidth="9.0" text=":" />
+      <Label fx:id="Money" layoutX="79.0" layoutY="430.0" prefHeight="21.0" prefWidth="126.0" />
+      <ImageView fitHeight="25.0" fitWidth="19.0" layoutX="574.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="WarningPassImage" layoutX="580.0" layoutY="315.0" visible="false">
+         <image>
+            <Image url="@../resources/iconWarning.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="WarningPassLable" alignment="CENTER_RIGHT" layoutX="320.0" layoutY="311.0" prefHeight="21.0" prefWidth="243.0" textFill="#bc1414" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Warningcvv2Image" layoutX="587.0" layoutY="404.0" visible="false">
+         <image>
+            <Image url="@../resources/iconWarning.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="Warningcvv2Lable" layoutX="373.0" layoutY="400.0" prefHeight="21.0" prefWidth="202.0" textFill="#bc1414" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="MahImage" fitHeight="25.0" fitWidth="19.0" layoutX="594.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../resources/iconWarning.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="MahLable" alignment="CENTER_RIGHT" layoutX="338.0" layoutY="463.0" prefHeight="21.0" prefWidth="243.0" textFill="#bc1414" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" layoutX="415.0" layoutY="539.0" visible="false">
+         <image>
+            <Image url="@../resources/iconWarning.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lable" alignment="CENTER_RIGHT" layoutX="244.0" layoutY="537.0" prefHeight="21.0" prefWidth="146.0" textFill="#bc1414" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

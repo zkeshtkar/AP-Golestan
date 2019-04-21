@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterContoroller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="809.0" prefWidth="746.0">
+            <children>
+                <PasswordField fx:id="passwordField" layoutX="247.0" layoutY="478.0" scaleY="0.8" />
+                <Text layoutX="313.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="به نام خدا" wrappingWidth="80.3154296875">
+                    <font>
+                        <Font size="12.0" />
+                    </font></Text>
+                <Text layoutX="277.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="دانشگاه شهید بهشتی " wrappingWidth="192.3154296875" />
+                <Text layoutX="244.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="سیستم جامع دانشگاهی " textAlignment="CENTER" wrappingWidth="192.3154296875">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Text layoutX="451.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="شناسه کاربری " wrappingWidth="122.3154296875" />
+                <Text layoutX="472.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="گذرواژه" wrappingWidth="80.3154296875" />
+                <Label fx:id="wrongPassword" layoutX="243.0" layoutY="609.0" prefHeight="38.0" prefWidth="209.0" text="wrong password!!!!" visible="false" />
+                <TextField fx:id="usernameField" layoutX="247.0" layoutY="437.0" scaleY="0.8" />
+                <Label fx:id="timeLable" layoutX="616.0" layoutY="33.0" prefHeight="21.0" prefWidth="80.0" text="Label" />
+                <ImageView fitHeight="146.0" fitWidth="194.0" layoutX="275.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../resources/3.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="Degree" layoutX="247.0" layoutY="398.0" scaleY="0.8" />
+                <Label layoutX="457.0" layoutY="403.0" prefHeight="21.0" prefWidth="115.0" text="ورود به عنوان " />
+                <Button layoutX="247.0" layoutY="580.0" mnemonicParsing="false" onAction="#register" prefHeight="31.0" prefWidth="80.0" scaleY="0.85" text="ثبت نام" />
+            <Button layoutX="373.0" layoutY="580.0" mnemonicParsing="false" onAction="#OptOut" prefHeight="31.0" prefWidth="80.0" scaleY="0.85" text="انصراف" />
+            <Label alignment="CENTER_RIGHT" layoutX="469.0" layoutY="516.0" prefHeight="21.0" prefWidth="58.0" text="جنسیت" />
+            <RadioButton fx:id="Man" layoutX="389.0" layoutY="516.0" mnemonicParsing="false" text="مرد" />
+            <RadioButton fx:id="woman" layoutX="253.0" layoutY="516.0" mnemonicParsing="false" text="زن" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>

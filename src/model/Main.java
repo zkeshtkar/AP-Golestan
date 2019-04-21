@@ -3,13 +3,7 @@ package model;
 import controller.Controller;
 import javafx.application.Application;
 import javafx.stage.Stage;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
-
-import static model.Admin.fileReader;
 
 public class Main extends Application {
 
